@@ -72,3 +72,8 @@ p{
     font-weight: 550;
     word-break: break-all;
 }
+.footer{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+}
