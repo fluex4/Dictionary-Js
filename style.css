@@ -77,3 +77,23 @@ p{
     width: 100%;
     text-align: center;
 }
+.bar{
+    padding: 5px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    border: none;
+    max-width: 80px;
+    min-width: 50px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    text-decoration: none;
+    color: white;
+}

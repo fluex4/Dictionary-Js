@@ -1,4 +1,4 @@
-
+let text = "Hello";
 Search=()=>{
     document.getElementById("content").innerHTML="";
     let val = document.getElementById("search").value;
@@ -6,7 +6,7 @@ Search=()=>{
     if( val=="")
      val="Dictionary";
     let url=`https://api.dictionaryapi.dev/api/v2/entries/en/${val}`;
-
+    text=val;
     fetch(url)
         .then((response)=>{
             return response.json();
@@ -56,4 +56,9 @@ Search=()=>{
                 document.getElementById("content").appendChild(hr);
             });}
         })
+}
+speak=()=>{
+    let utterance = new SpeechSynthesisUtterance(text);
+
+    window.speechSynthesis.speak(utterance);
 }
